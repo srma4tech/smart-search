@@ -1,0 +1,172 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+header button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #0056b3;
+}
+
+/* Search Section */
+.search-section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-section input,
+.search-section select,
+.search-section button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.search-section select {
+    height: 150px;
+    overflow-y: auto;
+}
+
+.search-section button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #218838;
+}
+
+/* History Section */
+.history-section {
+    margin-top: 20px;
+}
+
+.history-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#searchHistory {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#searchHistory li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+#searchHistory li a {
+    color: #007bff;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+#searchHistory li a:hover {
+    text-decoration: underline;
+}
+
+#searchHistory li .delete-icon {
+    font-size: 14px;
+    color: #ff0000;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Clear History Button */
+.clear-history {
+    margin-bottom: 15px;
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-history:hover {
+    background-color: #b02a37;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode header h1 {
+    color: #f1f1f1;
+}
+
+body.dark-mode header button,
+body.dark-mode .search-section button,
+body.dark-mode .clear-history {
+    color: #fff;
+}
+
+body.dark-mode header button:hover {
+    background-color: #333;
+}
+
+body.dark-mode #searchHistory li a {
+    color: #80bfff;
+}

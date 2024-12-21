@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Google Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Google Search</h1>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </header>
+
+        <section class="search-section">
+            <input type="text" id="searchQuery" placeholder="Enter your search query">
+            
+            <label for="searchFilters">Add Filters:</label>
+            <select id="searchFilters" multiple>
+                <option value="filetype:pdf">PDF Files</option>
+                <option value="filetype:mp4">Videos</option>
+                <option value="filetype:jpg OR filetype:png">Images</option>
+                <option value="site:youtube.com">YouTube Videos</option>
+                <option value="site:edu">Educational Sites</option>
+                <option value="intitle:">Search in Title</option>
+                <option value="inurl:">Search in URL</option>
+                <option value="related:">Related Sites</option>
+                <option value="cache:">Cached Pages</option>
+            </select>
+
+            <label for="customFilter">Custom Filter (Optional):</label>
+            <input type="text" id="customFilter" placeholder="e.g., site:github.com">
+
+            <button id="searchButton">Search</button>
+        </section>
+
+        <section class="history-section">
+            <h2>Recent Searches</h2>
+            <button id="clearHistory" class="clear-history">Clear All</button>
+            <ul id="searchHistory"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
