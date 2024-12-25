@@ -1,5 +1,6 @@
 
 # **Advanced Google Search Helper**
+https://srma4tech.github.io/smart-search/
 
 A web application built using pure HTML, CSS, and JavaScript that allows users to perform advanced Google searches with various filters like file types, specific keywords, and more. The app also keeps a history of recent searches and provides options to delete individual entries or clear the entire history.
 
